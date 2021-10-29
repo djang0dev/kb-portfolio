@@ -9,7 +9,7 @@
 	<?php wp_head() ?>
 
     <!-- title -->
-    <!--	<title>Mogen - Portfolio HTML Template</title>-->
+    <!--	<title>Kinane - Portfolio HTML Template</title>-->
 
     <!--favicon-->
     <!--	<link rel="icon" type="image/png" href="assets/images/favicon.png">-->
@@ -44,8 +44,8 @@
             <div class="col-12">
                 <nav class="navbar navbar-expand-md px-0 py-3 py-lg-4">
                     <!-- navbar logo -->
-                    <a class="navbar-brand font-weight-bold mb-0" href="/" title="Mogen">
-                        <img src="assets/images/logo.png" alt="Mogen">
+                    <a class="navbar-brand font-weight-bold mb-0" href="/" title="Kinane">
+                        <img src="assets/images/logo.png" alt="Kinane">
                     </a>
 
                     <!-- navbar-toggler -->
@@ -122,3 +122,16 @@
     </div>
 </div>
 <!-- end of navigation -->
+<!-- start of main-section -->
+<section data-barba="wrapper">
+    <main data-barba="container" data-barba-namespace="loader">
+
+        <!-- start of loader -->
+        <div class="loader fixed-top w-100 h-100 d-flex align-items-center justify-content-center bg-light">
+            <svg class="spinner" viewBox="0 0 50 50">
+                <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="2"></circle>
+            </svg>
+        </div>
+        <!-- end of loader -->
+
+        <div class="content-block">
