@@ -1,3 +1,20 @@
+<!-- start of cta -->
+<section class="section bg-light-soft">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto text-center">
+                <p class="small text-uppercase mb-4">Do you like my work?</p>
+                <div class="section-title text-center">
+                    <h2 class="title">Let’s make a wonderful <br> <span
+                                class="text-primary loop-text text-underline"><span>website</span><span>experience</span><span>direction</span><span>strategy</span></span>
+                        together!</h2>
+                </div>
+                <a class="btn mt-6" href="contact.html">Get in touch!</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end of cta -->
 <!-- start of footer -->
 <footer>
     <div class="container bg-light-soft">

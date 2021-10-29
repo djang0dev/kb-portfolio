@@ -7,11 +7,13 @@
         <div class="row">
             <div class="col-12 text-center">
                 <h1 class="heading">
-                    <span><?= __( 'Hi,', 'kb' ) ?><img class="rounded-pill" src="assets/images/author-sm.jpg"
-                                                       alt="*"> <?= __( 'I\'m Kinane', 'kb' ) ?></span>
+                    <span><?= __( 'Hi,', 'kb' ) ?><img class="rounded-pill"
+                                                       src="<?= wp_get_attachment_image_url( get_field( 's1-img' ), 'full' ) ?>"
+                                                       alt="<?= __( 'Profil picture', 'kb' ) ?>"> <?= __( 'I\'m Kinane', 'kb' ) ?></span>
                     <span><?= __( 'Web Developer & Growth Hacker', 'kb' ) ?></span>
-                    <span><?= __( 'based in', 'kb' ) ?> <img src="assets/images/country.jpg"
-                                                             alt="*"><?= __( ' France', 'kb' ) ?></span>
+                    <span><?= __( 'based in', 'kb' ) ?> <img
+                                src="<?= wp_get_attachment_image_url( get_field( 's1-country' ), 'full' ) ?>"
+                                alt="*"><?= __( ' France', 'kb' ) ?></span>
                 </h1>
             </div>
         </div>
@@ -25,11 +27,11 @@
         <div class="row justify-content-center gy-4 gx-6">
             <div class="col-xl-5 col-lg-8">
                 <div class="section-title mb-4">
-                    <h2 class="title">How can I help you?</h2>
+                    <h2 class="title"><?= __( 'How can I help you?', 'kb' ) ?></h2>
                 </div>
-                <p class="lead">As a Web developer, I am here to make you stand out in the digital world.
-                    The combination of my passion for design and your vision will ensure a great end
-                    result.</p>
+                <p class="lead"><?= __( 'As a Web developer, I am here to make you stand out in the digital world.
+                    The combination of my passion for web development and your vision will ensure a great end
+                    result.', 'kb' ) ?></p>
                 <div class="mt-5 d-none d-xl-block">
                     <a class="btn" href="services.html">Services</a>
                 </div>
@@ -51,66 +53,6 @@
                                       stroke="currentColor" stroke-width="1.5"/>
                             </svg>
                             <span class="d-inline-block">UI/UX Design</span>
-                        </div>
-                    </div>
-
-                    <!-- service-item -->
-                    <div class="col-xl-6 col-lg-4 col-sm-6">
-                        <div class="service-item-sm rounded-sm bg-white font-weight-500 position-relative h-100">
-                            <svg class="icon position-absolute" width="20" height="20" stroke-width="2"
-                                 viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3 9.4V3.6C3 3.26863 3.26863 3 3.6 3H20.4C20.7314 3 21 3.26863 21 3.6V9.4C21 9.73137 20.7314 10 20.4 10H3.6C3.26863 10 3 9.73137 3 9.4Z"
-                                      stroke="currentColor" stroke-width="2"/>
-                                <path d="M14 20.4V14.6C14 14.2686 14.2686 14 14.6 14H20.4C20.7314 14 21 14.2686 21 14.6V20.4C21 20.7314 20.7314 21 20.4 21H14.6C14.2686 21 14 20.7314 14 20.4Z"
-                                      stroke="currentColor" stroke-width="2"/>
-                                <path d="M3 20.4V14.6C3 14.2686 3.26863 14 3.6 14H9.4C9.73137 14 10 14.2686 10 14.6V20.4C10 20.7314 9.73137 21 9.4 21H3.6C3.26863 21 3 20.7314 3 20.4Z"
-                                      stroke="currentColor" stroke-width="2"/>
-                            </svg>
-                            <span class="d-inline-block">Website Design</span>
-                        </div>
-                    </div>
-
-                    <!-- service-item -->
-                    <div class="col-xl-6 col-lg-4 col-sm-6">
-                        <div class="service-item-sm rounded-sm bg-white font-weight-500 position-relative h-100">
-                            <svg class="icon position-absolute" width="20" height="20" stroke-width="1.5"
-                                 viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 16.01L12.01 15.9989" stroke="currentColor"
-                                      stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M7 19.4V4.6C7 4.26863 7.26863 4 7.6 4H16.4C16.7314 4 17 4.26863 17 4.6V19.4C17 19.7314 16.7314 20 16.4 20H7.6C7.26863 20 7 19.7314 7 19.4Z"
-                                      stroke="currentColor" stroke-width="1.5"/>
-                            </svg>
-                            <span class="d-inline-block">App Design</span>
-                        </div>
-                    </div>
-
-                    <!-- service-item -->
-                    <div class="col-xl-6 col-lg-4 col-sm-6">
-                        <div class="service-item-sm rounded-sm bg-white font-weight-500 position-relative h-100">
-                            <svg class="icon position-absolute" width="20" height="20" stroke-width="2"
-                                 viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2Z"
-                                      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M8 21.1679V14L12 7L16 14V21.1679" stroke="currentColor"
-                                      stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M8 14C8 14 9.12676 15 10 15C10.8732 15 12 14 12 14C12 14 13.1268 15 14 15C14.8732 15 16 14 16 14"
-                                      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span class="d-inline-block">Graphic Design</span>
-                        </div>
-                    </div>
-
-                    <!-- service-item -->
-                    <div class="col-xl-6 col-lg-4 col-sm-6">
-                        <div class="service-item-sm rounded-sm bg-white font-weight-500 position-relative h-100">
-                            <svg class="icon position-absolute" width="20" height="20" stroke-width="1.5"
-                                 viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14 14V6M14 14L20.1023 17.487C20.5023 17.7156 21 17.4268 21 16.9661V3.03391C21 2.57321 20.5023 2.28439 20.1023 2.51296L14 6M14 14H7C4.79086 14 3 12.2091 3 10V10C3 7.79086 4.79086 6 7 6H14"
-                                      stroke="currentColor" stroke-width="1.5"/>
-                                <path d="M7.75716 19.3001L7 14H11L11.6772 18.7401C11.8476 19.9329 10.922 21 9.71716 21C8.73186 21 7.8965 20.2755 7.75716 19.3001Z"
-                                      stroke="currentColor" stroke-width="1.5"/>
-                            </svg>
-                            <span class="d-inline-block">Branding</span>
                         </div>
                     </div>
                 </div>
@@ -437,24 +379,6 @@
     </div>
 </section>
 <!-- end of projects -->
-
-<!-- start of cta -->
-<section class="section bg-light-soft">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-10 mx-auto text-center">
-                <p class="small text-uppercase mb-4">Do you like my work?</p>
-                <div class="section-title text-center">
-                    <h2 class="title">Let’s make a wonderful <br> <span
-                                class="text-primary loop-text text-underline"><span>website</span><span>experience</span><span>direction</span><span>strategy</span></span>
-                        together!</h2>
-                </div>
-                <a class="btn mt-6" href="contact.html">Get in touch!</a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- end of cta -->
 
 
 <?php get_footer(); ?>
