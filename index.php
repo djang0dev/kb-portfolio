@@ -27,39 +27,37 @@
         <div class="row justify-content-center gy-4 gx-6">
             <div class="col-xl-5 col-lg-8">
                 <div class="section-title mb-4">
-                    <h2 class="title"><?= __( 'How can I help you?', 'kb' ) ?></h2>
+                    <h2 class="title"><?= get_field( 's2-title' ) ?></h2>
                 </div>
-                <p class="lead"><?= __( 'As a Web developer, I am here to make you stand out in the digital world.
-                    The combination of my passion for web development and your vision will ensure a great end
-                    result.', 'kb' ) ?></p>
+                <p class="lead"><?= get_field( 's2-desc' ) ?></p>
                 <div class="mt-5 d-none d-xl-block">
-                    <a class="btn" href="services.html">Services</a>
+                    <a class="btn"
+                       href="<?= _x( '/services/', 'kb', 'services btn s2' ) ?>"><?= _x( 'Services', 'kb', 'service text s2' ) ?></a>
                 </div>
             </div>
             <div class="col-xl-5">
                 <div class="row g-3">
                     <!-- service-item -->
-                    <div class="col-xl-6 col-lg-4 col-sm-6">
-                        <div class="service-item-sm rounded-sm bg-white font-weight-500 position-relative h-100">
-                            <svg class="icon position-absolute" width="20" height="20" stroke-width="1.5"
-                                 viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3 7.4V3.6C3 3.26863 3.26863 3 3.6 3H9.4C9.73137 3 10 3.26863 10 3.6V7.4C10 7.73137 9.73137 8 9.4 8H3.6C3.26863 8 3 7.73137 3 7.4Z"
-                                      stroke="currentColor" stroke-width="1.5"/>
-                                <path d="M14 20.4V16.6C14 16.2686 14.2686 16 14.6 16H20.4C20.7314 16 21 16.2686 21 16.6V20.4C21 20.7314 20.7314 21 20.4 21H14.6C14.2686 21 14 20.7314 14 20.4Z"
-                                      stroke="currentColor" stroke-width="1.5"/>
-                                <path d="M14 12.4V3.6C14 3.26863 14.2686 3 14.6 3H20.4C20.7314 3 21 3.26863 21 3.6V12.4C21 12.7314 20.7314 13 20.4 13H14.6C14.2686 13 14 12.7314 14 12.4Z"
-                                      stroke="currentColor" stroke-width="1.5"/>
-                                <path d="M3 20.4V11.6C3 11.2686 3.26863 11 3.6 11H9.4C9.73137 11 10 11.2686 10 11.6V20.4C10 20.7314 9.73137 21 9.4 21H3.6C3.26863 21 3 20.7314 3 20.4Z"
-                                      stroke="currentColor" stroke-width="1.5"/>
-                            </svg>
-                            <span class="d-inline-block">UI/UX Design</span>
-                        </div>
-                    </div>
+					<?php if ( have_rows( 'services' ) ): ?>
+						<?php while ( have_rows( 'services' ) ): the_row(); ?>
+                            <div class="col-xl-6 col-lg-4 col-sm-6">
+                                <div class="service-item-sm rounded-sm bg-white font-weight-500 position-relative h-100">
+                                    <img class="icon position-absolute" width="20" height="20" stroke-width="1.5"
+                                         viewBox="0 0 24 24" fill="none"
+                                         src="<?= get_sub_field( 'stack-icon' ) ?>"
+                                         xmlns="http://www.w3.org/2000/svg">
+
+                                    <span class="d-inline-block"><?= get_sub_field( 'stack-desc' ) ?></span>
+                                </div>
+                            </div>
+						<?php endwhile; ?>
+					<?php endif ?>
                 </div>
             </div>
             <div class="col-lg-12 d-block d-xl-none">
-                <a class="btn mt-2" href="services.html">Services</a>
+                <a class="btn mt-2" href="services.html"><?= __( 'Services', 'kb' ) ?></a>
             </div>
+
         </div>
     </div>
 </section>

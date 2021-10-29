@@ -25,6 +25,7 @@
 
 </head>
 <body class="has-noise">
+
 <!-- start of scroll-progress -->
 <div class="scroll-progress position-fixed">
     <div class="scroll-bar"></div>
@@ -83,26 +84,20 @@
                             <g></g>
                         </svg>
                     </button>
-
-                    <!-- navbar links -->
                     <div class="navbar-collapse" id="navbar-menu">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="services.html">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="projects.html">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="blog.html">Blog</a>
-                            </li>
-                        </ul>
+						<?php wp_nav_menu( [
+							                   'theme_location'  => 'header',
+							                   'container'       => false,
+							                   'menu_class'      => 'navbar-nav mx-auto',
+							                   'container_class' => "navbar-collapse",
+							                   'container_id'    => "navbar-menu",
+							                   'list_item_class' => 'nav-item',
+							                   'link_class'      => 'nav-link',
+						                   ] ); ?>
                         <ul class="navbar-nav mt-3 mt-md-0">
                             <li class="nav-item">
-                                <a class="btn btn-sm" href="contact.html">Contact</a>
+                                <a class="btn btn-sm"
+                                   href="<?= _x( '/contact/', 'kb', 'contact href header menu' ) ?>"><?= _x( 'Contact', 'kb', 'contact btn text header' ) ?></a>
                             </li>
                         </ul>
                     </div>
