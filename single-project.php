@@ -66,75 +66,11 @@
     </section>
     <!-- end of project details -->
 
-    <!-- start of project -->
-    <section class="section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="section-title mb-6">
-                        <h2 class="title">More Projects</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-5 justify-content-center project-page">
-                <div class="col-md-5">
-                    <a class="project-block d-block text-reset" data-color="#f8d3d4" href="#!">
-                        <div class="project-image rounded overflow-hidden">
-                            <img class="w-100 rounded" src="assets/images/projects/05.jpg" alt="">
-                        </div>
-                        <div class="project-content d-flex align-items-center justify-content-between mt-4">
-                            <div>
-                                <h3 class="mb-1">Sol Mexican Grill</h3>
-                                <p class="mb-0">Sol Mexican Grill is a Mexican restaurant</p>
-                            </div>
-                            <div class="icon ms-4">
-                                <svg width="26px" height="18px" viewBox="0 0 26 18" version="1.1"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                        <g id="Werk-1" transform="translate(-220.000000, -2553.000000)" fill="#191A1E">
-                                            <g id="Group-12" transform="translate(170.000000, 2211.000000)">
-                                                <path d="M63.9305435,360.256408 L70.0630489,354.123902 L71.4695733,355.530427 L64.38624,362.61376 L62.9695733,364.030427 L54.5304267,355.59128 L55.9470934,354.174613 L61.9270743,360.154594 L61.9270743,338 L63.9305435,338 L63.9305435,360.256408 Z"
-                                                      id="Combined-Shape"
-                                                      transform="translate(63.000000, 351.000000) rotate(-90.000000) translate(-63.000000, -351.000000) "></path>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-5">
-                    <a class="project-block d-block text-reset" data-color="#d8f3e6" href="#!">
-                        <div class="project-image rounded overflow-hidden">
-                            <img class="w-100 rounded" src="assets/images/projects/06.jpg" alt="">
-                        </div>
-                        <div class="project-content d-flex align-items-center justify-content-between mt-4">
-                            <div>
-                                <h3 class="mb-1">AKERMUS</h3>
-                                <p class="mb-0">It is a skincare brand based in Canada</p>
-                            </div>
-                            <div class="icon ms-4">
-                                <svg width="26px" height="18px" viewBox="0 0 26 18" version="1.1"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                        <g id="Werk-1" transform="translate(-220.000000, -2553.000000)" fill="#191A1E">
-                                            <g id="Group-12" transform="translate(170.000000, 2211.000000)">
-                                                <path d="M63.9305435,360.256408 L70.0630489,354.123902 L71.4695733,355.530427 L64.38624,362.61376 L62.9695733,364.030427 L54.5304267,355.59128 L55.9470934,354.174613 L61.9270743,360.154594 L61.9270743,338 L63.9305435,338 L63.9305435,360.256408 Z"
-                                                      id="Combined-Shape"
-                                                      transform="translate(63.000000, 351.000000) rotate(-90.000000) translate(-63.000000, -351.000000) "></path>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end of project -->
+    <!-- start of more projects -->
+	<?php
+	// dans un custom template
+	require_once( 'template-parts/query/single-project-query.php' ) ?>
+    <!-- end of more projects -->
 <?php endwhile; ?>
 
 <?php get_footer(); ?>
