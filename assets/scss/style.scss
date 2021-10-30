@@ -6,3 +6,21 @@
 
 @import 'templates/_navigation.scss';
 @import 'templates/main.scss';
+// fix
+
+// fix fluent form
+#fluentform_1 {
+  label {
+    font-size: .875em;
+    margin-bottom: .5rem !important;
+    text-transform: uppercase;
+
+  }
+
+  input, textarea {
+    @extend h3;
+    @extend .form-control;
+    margin-bottom: .5rem !important;
+  }
+
+}

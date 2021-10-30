@@ -24,4 +24,3 @@ function kb_get_services( array $services ): string {
 
 	return $acc;
 }
-

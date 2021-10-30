@@ -62,7 +62,6 @@
     </div>
 </section>
 <!-- end of intro -->
-
 <!-- start of projects -->
 <section class="section swiper-projects-section">
     <div class="container">
@@ -73,12 +72,9 @@
                 </div>
             </div>
             <div class="col-12">
-
-				<?php
-				// swiper dans un fichier à part pour plus de lisibilité
-				require_once( 'template-parts/query/hp-query.php' ) ?>
+				<?php include get_theme_file_path( '/template-parts/query/hp-query.php' ) ?>
                 <div class="text-center pt-4">
-                    <a class="btn" href="<?= get_permalink( get_page_by_path( 'services' ) ) ?>">All Projects</a>
+                    <a class="btn" href="<?= get_permalink( get_page_by_path( 'project' ) ) ?>">All Projects</a>
                 </div>
             </div>
         </div>
@@ -99,39 +95,14 @@
         <div class="row">
             <div class="col-lg-10 mx-auto">
                 <div class="row g-5 align-items-center justify-content-center">
-                    <div class="col-lg-3 col-md-3 col-6 text-center">
-                        <img class="img-fluid brand-logo" src="assets/images/brands/01.png" alt="brand">
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-6 text-center">
-                        <img class="img-fluid brand-logo" src="assets/images/brands/06.png" alt="brand">
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-6 text-center">
-                        <img class="img-fluid brand-logo" src="assets/images/brands/03.png" alt="brand">
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-6 text-center">
-                        <img class="img-fluid brand-logo" src="assets/images/brands/04.png" alt="brand">
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-6 text-center">
-                        <img class="img-fluid brand-logo" src="assets/images/brands/05.png" alt="brand">
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-6 text-center">
-                        <img class="img-fluid brand-logo" src="assets/images/brands/02.png" alt="brand">
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-6 text-center">
-                        <img class="img-fluid brand-logo" src="assets/images/brands/07.png" alt="brand">
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-6 text-center">
-                        <img class="img-fluid brand-logo" src="assets/images/brands/08.png" alt="brand">
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-6 text-center">
-                        <img class="img-fluid brand-logo" src="assets/images/brands/03.png" alt="brand">
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-6 text-center">
-                        <img class="img-fluid brand-logo" src="assets/images/brands/04.png" alt="brand">
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-6 text-center">
-                        <img class="img-fluid brand-logo" src="assets/images/brands/05.png" alt="brand">
-                    </div>
+					<?php if ( have_rows( 'companies' ) ): ?>
+						<?php while ( have_rows( 'companies' ) ) : the_row(); ?>
+                            <div class="col-lg-3 col-md-3 col-6 text-center">
+                                <img class="img-fluid brand-logo" src="<?php the_sub_field( 'company' ) ?>"
+                                     alt="brand">
+                            </div>
+
+						<?php endwhile; endif; ?>
                 </div>
             </div>
         </div>

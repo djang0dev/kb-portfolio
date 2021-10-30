@@ -10,7 +10,7 @@
 						<?= sprintf( _x( '<span>%1s</span><span>%2s</span><span>%3s</span><span>%4s</span></span>', 'kb', 'text loop' ), 'website', 'experience', 'direction', 'strategy' ) ?>
 						<?= _x( ' together!', 'kb', 'after text loop footer' ) ?></h2>
                 </div>
-                <a class="btn mt-6" href="contact.html">Get in touch!</a>
+                <a class="btn mt-6" href="<?= get_permalink( get_page_by_path( 'contact' ) ) ?>">Get in touch!</a>
             </div>
         </div>
     </div>
