@@ -30,7 +30,8 @@ $singleLoop = new WP_Query( $singleArgs );
                     <a class="project-block d-block text-reset" data-color="<?php the_field( 'single-main-color' ) ?>"
                        href="<?php the_permalink(); ?>">
                         <div class="project-image rounded overflow-hidden">
-                            <img class="w-100 rounded" src="<?= get_the_post_thumbnail_url( get_post(), 'full' ) ?>"
+                            <img class="w-100 rounded"
+                                 src="<?= get_the_post_thumbnail_url( get_post(), 'more-project-thumbnail' ) ?>"
                                  alt="">
                         </div>
                         <div class="project-content d-flex align-items-center justify-content-between mt-4">

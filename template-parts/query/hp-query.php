@@ -19,7 +19,7 @@ $hpLoop = new WP_Query( $hpArgs );
                 <div class="project-block" data-color="<?php the_field( 'single-main-color' ) ?>">
                     <div class="project-image rounded overflow-hidden">
                         <img class="w-100 rounded"
-                             src="<?= get_the_post_thumbnail_url( get_post(), 'full' ) ?>" alt="">
+                             src="<?= get_the_post_thumbnail_url( get_post(), 'hp-recent-project' ) ?>" alt="">
                     </div>
                     <a class="project-content d-flex align-items-center justify-content-between mt-4 text-reset"
                        href="<?php the_permalink(); ?>">
