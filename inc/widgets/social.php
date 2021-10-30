@@ -17,6 +17,7 @@ class KB_Social_Widget extends WP_Widget {
 		];
 	}
 
+	// view
 	public function widget( $args, $instance ): void {
 		echo $args['before_widget'];
 		if ( isset( $instance['title'] ) ) {
@@ -32,6 +33,7 @@ class KB_Social_Widget extends WP_Widget {
 
 	}
 
+	// form back office gutenberg
 	public function form( $instance ): void {
 		foreach ( $this->fields as $field => $label ) {
 			$value = $instance[ $field ] ?? '';
@@ -44,6 +46,20 @@ class KB_Social_Widget extends WP_Widget {
 			<?php
 
 		}
+	}
+
+	// function de mise à jour du widget
+	public function update( $new_instance, $old_instance ) {
+		if ( $new_instance === $old_instance ) {
+			return false;
+		}
+		$output = [];
+		foreach ( $this->fields as $field => $label ) {
+			$output[ $field ] = $new_instance[ $field ] ?? '';
+
+		}
+
+		return $output;
 	}
 
 
