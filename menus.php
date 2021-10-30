@@ -35,3 +35,22 @@ function kb_menu_link_class( $atts, $item, $args ) {
 }
 
 add_filter( 'nav_menu_link_attributes', 'kb_menu_link_class', 1, 3 );
+
+// widgets
+
+require_once( 'inc/widgets/social.php' );
+add_action( 'widgets_init', function () {
+	// declare footer widget zone
+	register_widget( KB_Social_Widget::class );
+	register_sidebar( [
+		                  'id'            => 'footer-social',
+		                  'name'          => __( 'Footer Social', 'kb' ),
+		                  'before_title'  => '<div class="footer__title">',
+		                  'after_title'   => '</div>',
+		                  'before_widget' => '<div class="footer__col">',
+		                  'after_widget'  => '</div>'
+	                  ] );
+
+
+} );
+

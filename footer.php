@@ -24,14 +24,9 @@
             <div class="row gx-0 gx-md-4 gy-4 justify-content-center">
                 <div class="col-lg-5 text-center text-lg-start order-1 order-lg-0">
                     <ul class="list-inline mb-3">
-                        <li class="list-inline-item"><a class="text-hover-underline-initial text-white"
-                                                        href="#!">Facebook</a></li>
-                        <li class="list-inline-item"><a class="text-hover-underline-initial text-white"
-                                                        href="#!">Twitter</a></li>
-                        <li class="list-inline-item"><a class="text-hover-underline-initial text-white"
-                                                        href="#!">Instagram</a></li>
+						<?php dynamic_sidebar( 'footer-social' ) ?>
                     </ul>
-                    <p class="small">&copy; Copyright, Kinane Brevet</p>
+                    <p class="small"><?= _x( '&copy; Copyright, Kinane Brevet', 'kb', 'Copyright in footer' ) ?></p>
                 </div>
                 <div class="col-lg-5 text-center text-lg-end order-0 order-lg-1">
 					<?php wp_nav_menu( [
