@@ -56,7 +56,8 @@ $singleLoop = new WP_Query( $singleArgs );
                         </div>
                     </a>
                 </div>
-			<?php endwhile; ?>
+			<?php endwhile;
+			wp_reset_postdata(); ?>
         </div>
 
     </div>
