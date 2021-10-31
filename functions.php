@@ -24,3 +24,15 @@ function kb_get_services( array $services ): string {
 
 	return $acc;
 }
+
+function kb_get_category( array $categories ): string {
+	if ( $categories[0] ) {
+		return $categories[0]->cat_name;
+	}
+
+	return false;
+}
+
+function kb_get_url_category( string $category ): string {
+	return get_category_link( get_category_by_slug( $category ) );
+}

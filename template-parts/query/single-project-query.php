@@ -1,9 +1,9 @@
 <?php
 /**
- * Ce fichier renvoie la custom WP_Query pour afficher sur la homepage les projects CPT
+ * Ce fichier renvoie la custom WP_Query pour afficher sur la single projects CPT
  * */
-$singleArgs = [
-	'post_type'      => 'project',
+$singleProjectArgs = [
+	'post_type'      => get_post_type(),
 	'post_status'    => 'publish',
 	'posts_per_page' => 2,
 	'orderby'        => 'rand',
@@ -11,7 +11,7 @@ $singleArgs = [
 
 
 ];
-$singleLoop = new WP_Query( $singleArgs );
+$singleProjectLoop = new WP_Query( $singleProjectArgs );
 
 ?>
 <section class="section">
@@ -25,7 +25,7 @@ $singleLoop = new WP_Query( $singleArgs );
         </div>
 
         <div class="row g-5 justify-content-center project-page">
-			<?php while ( $singleLoop->have_posts() ) : $singleLoop->the_post(); ?>
+			<?php while ( $singleProjectLoop->have_posts() ) : $singleProjectLoop->the_post(); ?>
                 <div class="col-md-5">
                     <a class="project-block d-block text-reset" data-color="<?php the_field( 'single-main-color' ) ?>"
                        href="<?php the_permalink(); ?>">

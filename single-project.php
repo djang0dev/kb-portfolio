@@ -69,7 +69,7 @@
     <!-- start of more projects -->
 	<?php
 	// dans un custom template
-	require_once( 'template-parts/query/single-project-query.php' ) ?>
+	include get_theme_file_path( '/template-parts/query/single-project-query.php' ) ?>
     <!-- end of more projects -->
 <?php endwhile; ?>
 
