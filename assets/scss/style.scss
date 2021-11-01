@@ -11,9 +11,9 @@
 // fix fluent form
 #fluentform_1 {
   label {
-    font-size: .875em;
+    font-size: .875em !important;
     margin-bottom: .5rem !important;
-    text-transform: uppercase;
+    text-transform: uppercase !important;
 
   }
 
@@ -21,6 +21,7 @@
     @extend h3;
     @extend .form-control;
     margin-bottom: .5rem !important;
+    width: 100% !important;
   }
 
 }

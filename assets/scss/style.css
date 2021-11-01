@@ -1142,12 +1142,13 @@ footer .block::after {
 }
 
 #fluentform_1 label {
-  font-size: 0.875em;
+  font-size: 0.875em !important;
   margin-bottom: 0.5rem !important;
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
 #fluentform_1 input, #fluentform_1 textarea {
   margin-bottom: 0.5rem !important;
+  width: 100% !important;
 }
 
 /*# sourceMappingURL=style.css.map */

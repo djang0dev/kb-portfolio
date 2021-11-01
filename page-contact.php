@@ -25,7 +25,8 @@
                                           d="M230,380 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"></path>
                                 </defs>
                                 <text class="text-uppercase" style="font-size:40px;letter-spacing:6px">
-                                    <textPath fill="white" href="#circle-button-text">Contact — Get in touch — Hola —
+                                    <textPath fill="white"
+                                              href="#circle-button-text"><?= __( 'Contact — Get in touch — Hola —', 'kb' ) ?>
                                     </textPath>
                                 </text>
                             </svg>
@@ -55,7 +56,7 @@
                                     <h2 class="title h3">Contact Details</h2>
                                 </div>
 
-                                <p class="mb-2"><a class="btn-link-alt" href="mailto:hello@mogen.io">hello@mogen.io</a>
+                                <p class="mb-2"><a class="btn-link-alt" href="mailto:hello@kinanebrevet.me">hello@kinanebrevet.me</a>
                                 </p>
                                 <p><a class="btn-link-alt" href="tel:+31869235">+31 6 869 235</a></p>
                             </div>

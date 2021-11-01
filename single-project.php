@@ -31,22 +31,19 @@
                         </div>
                     </ul>
                     <ul class="list-unstyled list-inline">
-                        <div class="list-inline-item mt-4 me-3">
-                            <h3 class="mt-4 mb-2 h5 text-uppercase px-3 py-1 rounded"
-                                style="background: var(--bs-dark); color: white;">PHP</h3>
-                        </div>
-                        <div class="list-inline-item mt-4 me-3">
-                            <h3 class="mt-4 mb-2 h5 px-3 py-1 rounded"
-                                style="background: var(--bs-dark); color: white;">WordPress</h3>
-                        </div>
-                        <div class="list-inline-item mt-4 me-3">
-                            <h3 class="mt-4 mb-2 h5 px-3 py-1 rounded"
-                                style="background: var(--bs-dark); color: white;">JavaScript</h3>
-                        </div>
-                        <div class="list-inline-item mt-4 me-3">
-                            <h3 class="mt-4 mb-2 h5 px-3 py-1 rounded"
-                                style="background: var(--bs-dark); color: white;">Sass</h3>
-                        </div>
+						<?php $technos = get_the_terms( get_post(), 'projects_technology' );
+
+
+						usort( $technos, function ( $a, $b ) {
+							return strcmp( $a->name, $b->name );
+						} );
+
+						if ( $technos ): foreach ( $technos as $techno ): ?>
+                            <div class="list-inline-item mt-4 me-3">
+                                <h3 class="mt-4 mb-2 h5 px-3 py-1 rounded"
+                                    style="background: var(--bs-dark); color: white;"><?= $techno->name ?></h3>
+                            </div>
+						<?php endforeach; endif; ?>
                     </ul>
                 </div>
             </div>
@@ -89,6 +86,6 @@
 	// dans un custom template
 	include get_theme_file_path( '/template-parts/query/single-project-query.php' ) ?>
     <!-- end of more projects -->
-<?php endwhile; ?>
+<?php endwhile ?>
 
 <?php get_footer(); ?>
