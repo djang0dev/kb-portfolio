@@ -23,4 +23,9 @@ function kb_enqueue_scripts() {
 	],                 0.1, true );
 	wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/scss/style.css', [], false );
 
+
+//	if ( is_404() ) {
+//		wp_enqueue_script( 'model-viewer', 'https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js', [], false, true );
+//	}
+
 }
