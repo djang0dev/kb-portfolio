@@ -36,3 +36,13 @@ function kb_get_category( array $categories ): string {
 function kb_get_url_category( string $category ): string {
 	return get_category_link( get_category_by_slug( $category ) );
 }
+
+function my_custom_upload_mimes( $mimes = array() ) {
+
+// Add a key and value for the CSV file type
+	$mimes['glb'] = "application/octet-stream";
+
+	return $mimes;
+}
+
+add_action( 'upload_mimes', 'my_custom_upload_mimes' );
