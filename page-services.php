@@ -81,8 +81,8 @@
                         <hr class="mt-0 mb-5">
                         <p class="font-secondary"><?= __( 'Can’t find the answer? Drop me an email at', 'kb' ) ?> <a
                                     class="btn-link"
-                                    href="mailto:hello@kinanebrevet.me">hello
-                                [at] kinanebrevet.me</a>
+                                    href="mailto:hello@kinane.co">hello
+                                [at] kinane.co</a>
                         </p>
                     </div>
                 </div>

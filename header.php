@@ -45,8 +45,8 @@
             <div class="col-12">
                 <nav class="navbar navbar-expand-md px-0 py-3 py-lg-4">
                     <!-- navbar logo -->
-                    <a class="navbar-brand font-weight-bold mb-0" href="/" title="Kinane">
-                        <img src="assets/images/logo.png" alt="Kinane">
+                    <a class="navbar-brand font-weight-bold mb-0" href="/" title="Kinane">Kinane
+                        <!--<img src="assets/images/logo.png" alt="Kinane">-->
                     </a>
 
                     <!-- navbar-toggler -->

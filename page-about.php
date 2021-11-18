@@ -6,7 +6,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="text-center">
-                    <p class="small text-uppercase mb-4">I'm Kinane</p>
+                    <p class="small text-uppercase mb-4"><?= __( 'I\'m Kinane', 'kb' ) ?></p>
                     <div class="section-title text-center">
                         <h1 class="title"><?= __( 'About Me', 'kb' ) ?></h1>
                     </div>
@@ -64,7 +64,7 @@
             <div class="col-lg-4 col-10">
                 <div class="about-image position-sticky pe-0 pe-lg-6">
                     <img class="img-fluid rounded-pill"
-                         src="http://portfolio/wp-content/uploads/2021/11/profil-pic-2.jpg"
+                         src="https://kinane.co/wp-content/uploads/2021/11/profil-pic-2.jpg"
                          alt="author">
                 </div>
             </div>
@@ -111,7 +111,7 @@
                     <div class="col-sm-6">
                         <div class="section pb-0">
                             <div class="section-title mb-5">
-                                <h2 class="title h3">Tools</h2>
+                                <h2 class="title h3"><?= __( 'Tools', 'kb' ) ?></h2>
                             </div>
 
                             <div class="row g-3">
@@ -120,7 +120,7 @@
                                     <div class="col-12">
                                         <p class="h5 font-tertiary"><?= get_sub_field( 'tool' ) ?></p>
                                     </div>
-								<?php endwhile; endif; ?>>
+								<?php endwhile; endif; ?>
                             </div>
                         </div>
                     </div>

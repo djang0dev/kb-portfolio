@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Ce fichier renvoie la custom WP_Query pour afficher sur la homepage les projects CPT
  * */

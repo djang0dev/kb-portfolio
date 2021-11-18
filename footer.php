@@ -20,13 +20,13 @@
 <footer>
     <div class="container bg-light-soft">
         <div class="block"
-             style="background-image:url(http://portfolio/wp-content/uploads/2021/10/footer_test.jpg)">
+             style="background-image:url(https://kinane.co/wp-content/uploads/2021/10/footer_test.jpg)">
             <div class="row gx-0 gx-md-4 gy-4 justify-content-center">
                 <div class="col-lg-5 text-center text-lg-start order-1 order-lg-0">
                     <ul class="list-inline mb-3">
 						<?php dynamic_sidebar( 'footer-social' ) ?>
                     </ul>
-                    <p class="small"><?= _x( '&copy; Copyright, Kinane Brevet', 'kb', 'Copyright in footer' ) ?></p>
+                    <p class="small"><?= _x( '&copy; Copyright, Kinane B', 'kb', 'Copyright in footer' ) ?></p>
                 </div>
                 <div class="col-lg-5 text-center text-lg-end order-0 order-lg-1">
 					<?php wp_nav_menu( [
@@ -37,7 +37,7 @@
 						                   'list_item_class' => 'list-inline-item',
 						                   'link_class'      => 'text-hover-underline-initial text-white',
 					                   ] ); ?>
-                    <p class="small">Contact at <a class="btn-link text-white" href="mailto:hello@Kinane.io">hello@kinane.dev?</a>
+                    <p class="small">Contact at <a class="btn-link text-white" href="mailto:hello@kinane.co">hello[at]kinane.co</a>
                     </p>
                 </div>
             </div>

@@ -55,7 +55,8 @@
                 </div>
             </div>
             <div class="col-lg-12 d-block d-xl-none">
-                <a class="btn mt-2" href="services.html"><?= __( 'Services', 'kb' ) ?></a>
+                <a class="btn mt-2"
+                   href="<?= get_permalink( get_page_by_path( 'services' ) ) ?>"><?= __( 'Services', 'kb' ) ?></a>
             </div>
 
         </div>
@@ -74,7 +75,8 @@
             <div class="col-12">
 				<?php include get_theme_file_path( '/template-parts/query/hp-query.php' ) ?>
                 <div class="text-center pt-4">
-                    <a class="btn" href="<?= get_permalink( get_page_by_path( 'project' ) ) ?>">All Projects</a>
+                    <a class="btn"
+                       href="<?= get_post_type_archive_link( 'project' ) ?>"><?= __( 'All Projects', 'kb' ) ?></a>
                 </div>
             </div>
         </div>
