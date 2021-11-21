@@ -32,7 +32,7 @@
                 <p class="lead"><?= get_field( 's2-desc' ) ?></p>
                 <div class="mt-5 d-none d-xl-block">
                     <a class="btn"
-                       href="<?= _x( '/services/', 'kb', 'services btn s2' ) ?>"><?= _x( 'Services', 'kb', 'service text s2' ) ?></a>
+                       href="<?= _x( '/about/', 'kb', 'services btn s2' ) ?>"><?= _x( 'About', 'kb', 'service text s2' ) ?></a>
                 </div>
             </div>
             <div class="col-xl-5">
@@ -56,7 +56,7 @@
             </div>
             <div class="col-lg-12 d-block d-xl-none">
                 <a class="btn mt-2"
-                   href="<?= get_permalink( get_page_by_path( 'services' ) ) ?>"><?= __( 'Services', 'kb' ) ?></a>
+                   href="<?= get_permalink( get_page_by_path( 'about' ) ) ?>"><?= __( 'About', 'kb' ) ?></a>
             </div>
 
         </div>
@@ -84,33 +84,34 @@
 </section>
 <!-- end of projects -->
 
-<!-- start of projects -->
-<section class="section border-top border-color">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 mb-6">
-                <div class="section-title text-center">
-                    <h2 class="title">I've Worked With</h2>
+<?php if ( get_field( 'show-companies' ) ): ?>
+    <!-- start of worked with -->
+    <section class="section border-top border-color">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-6">
+                    <div class="section-title text-center">
+                        <h2 class="title"><?= __( 'I\'ve Worked With', 'kb' ) ?></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="row g-5 align-items-center justify-content-center">
+						<?php if ( have_rows( 'companies' ) ): ?>
+							<?php while ( have_rows( 'companies' ) ) : the_row(); ?>
+                                <div class="col-lg-3 col-md-3 col-6 text-center">
+                                    <img class="img-fluid brand-logo" src="<?php the_sub_field( 'company' ) ?>"
+                                         alt="brand">
+                                </div>
+
+							<?php endwhile; endif; ?>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-10 mx-auto">
-                <div class="row g-5 align-items-center justify-content-center">
-					<?php if ( have_rows( 'companies' ) ): ?>
-						<?php while ( have_rows( 'companies' ) ) : the_row(); ?>
-                            <div class="col-lg-3 col-md-3 col-6 text-center">
-                                <img class="img-fluid brand-logo" src="<?php the_sub_field( 'company' ) ?>"
-                                     alt="brand">
-                            </div>
-
-						<?php endwhile; endif; ?>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- end of projects -->
-
+    </section>
+    <!-- end of worked with -->
+<?php endif; ?>
 
 <?php get_footer(); ?>

@@ -8,21 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<?php wp_head() ?>
 
-    <!-- title -->
-    <!--	<title>Kinane - Portfolio HTML Template</title>-->
-
-    <!--favicon-->
-    <!--	<link rel="icon" type="image/png" href="assets/images/favicon.png">-->
-
-    <!-- CSS files -->
-    <!--	<link rel="stylesheet" href="plugins/spinner/spinner.min.css">-->
-    <!--	<link rel="stylesheet" href="plugins/bootstrap/bootstrap.custom.min.css">-->
-    <!--	<link rel="stylesheet" href="plugins/line-awesome/css/line-awesome.min.css">-->
-    <!--	<link rel="stylesheet" href="plugins/swiper/swiper-bundle.min.css">-->
-
-    <!-- main stylesheet -->
-    <!--	<link href="assets/css/style.css" rel="stylesheet">-->
-
 </head>
 <body class="has-noise">
 
@@ -45,7 +30,7 @@
             <div class="col-12">
                 <nav class="navbar navbar-expand-md px-0 py-3 py-lg-4">
                     <!-- navbar logo -->
-                    <a class="navbar-brand font-weight-bold mb-0" href="/" title="Kinane">Kinane
+                    <a class="navbar-brand font-weight-bold mb-0" href="<?= get_home_url() ?>" title="Kinane">Kinane
                         <!--<img src="assets/images/logo.png" alt="Kinane">-->
                     </a>
 
@@ -97,7 +82,7 @@
                         <ul class="navbar-nav mt-3 mt-md-0">
                             <li class="nav-item">
                                 <a class="btn btn-sm"
-                                   href="<?= _x( '/contact/', 'kb', 'contact href header menu' ) ?>"><?= _x( 'Contact', 'kb', 'contact btn text header' ) ?></a>
+                                   href="<?= get_permalink( get_page_by_path( 'contact' ) ) ?>"><?= _x( 'Contact', 'kb', 'contact btn text header' ) ?></a>
                             </li>
                         </ul>
                     </div>

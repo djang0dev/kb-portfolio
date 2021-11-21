@@ -7,10 +7,11 @@
                 <div class="section-title text-center">
                     <h2 class="title"><?= __( 'Let\'s make a wonderful ', 'kb' ) ?> <br> <span
                                 class="text-primary loop-text text-underline">
-						<?= sprintf( _x( '<span>%1s</span><span>%2s</span><span>%3s</span><span>%4s</span></span>', 'kb', 'text loop' ), 'website', 'experience', 'direction', 'strategy' ) ?>
+						<?= sprintf( _x( '<span>%1s</span><span>%2s</span><span>%3s</span><span>%4s</span></span>', 'kb', 'text loop' ), 'website', 'experience', 'app', 'strategy' ) ?>
 						<?= _x( ' together!', 'kb', 'after text loop footer' ) ?></h2>
                 </div>
-                <a class="btn mt-6" href="<?= get_permalink( get_page_by_path( 'contact' ) ) ?>">Get in touch!</a>
+                <a class="btn mt-6"
+                   href="<?= get_permalink( get_page_by_path( 'contact' ) ) ?>"><?= __( 'Get in touch!', 'kb' ) ?></a>
             </div>
         </div>
     </div>
@@ -37,7 +38,8 @@
 						                   'list_item_class' => 'list-inline-item',
 						                   'link_class'      => 'text-hover-underline-initial text-white',
 					                   ] ); ?>
-                    <p class="small">Contact at <a class="btn-link text-white" href="mailto:hello@kinane.co">hello[at]kinane.co</a>
+                    <p class="small"><?= __( 'Contact at ', 'kb' ) ?><a class="btn-link text-white"
+                                                                        href="mailto:hello@kinane.co">hello[at]kinane.co</a>
                     </p>
                 </div>
             </div>

@@ -36,45 +36,45 @@
             </div>
         </div>
         <!-- end of page-header -->
+		<?php if ( get_field( 'contact_info' ) ) : ?>
+            <!-- start of contact info -->
+            <section class="section bg-light-soft adjust-rotate-circle-spacing">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="row g-5">
+                                <div class="col-lg-4">
+                                    <div class="section-title mb-4">
+                                        <h2 class="title h3">Find me on</h2>
+                                    </div>
 
-        <!-- start of contact info -->
-        <section class="section bg-light-soft adjust-rotate-circle-spacing">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="row g-5">
-                            <div class="col-lg-4">
-                                <div class="section-title mb-4">
-                                    <h2 class="title h3">Find me on</h2>
+                                    <p class="mb-2"><a class="btn-link-alt" href="#!">Dribbble</a></p>
+                                    <p><a class="btn-link-alt" href="#!">Behance</a></p>
                                 </div>
+                                <div class="col-lg-4">
+                                    <div class="section-title mb-4">
+                                        <h2 class="title h3">Contact Details</h2>
+                                    </div>
 
-                                <p class="mb-2"><a class="btn-link-alt" href="#!">Dribbble</a></p>
-                                <p><a class="btn-link-alt" href="#!">Behance</a></p>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="section-title mb-4">
-                                    <h2 class="title h3">Contact Details</h2>
+                                    <p class="mb-2"><a class="btn-link-alt" href="mailto:hello@kinanebrevet.me">hello@kinanebrevet.me</a>
+                                    </p>
+                                    <p><a class="btn-link-alt" href="tel:+31869235">+31 6 869 235</a></p>
                                 </div>
+                                <div class="col-lg-4">
+                                    <div class="section-title mb-4">
+                                        <h2 class="title h3">Business Details</h2>
+                                    </div>
 
-                                <p class="mb-2"><a class="btn-link-alt" href="mailto:hello@kinanebrevet.me">hello@kinanebrevet.me</a>
-                                </p>
-                                <p><a class="btn-link-alt" href="tel:+31869235">+31 6 869 235</a></p>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="section-title mb-4">
-                                    <h2 class="title h3">Business Details</h2>
+                                    <p class="mb-2">CoC: 56971536</p>
+                                    <p>VAT: FR006953208D08</p>
                                 </div>
-
-                                <p class="mb-2">CoC: 56971536</p>
-                                <p>VAT: FR006953208D08</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- end of contact info -->
-
+            </section>
+            <!-- end of contact info -->
+		<?php endif; ?>
         <!-- start of contact form -->
         <section class="section">
             <div class="container">

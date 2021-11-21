@@ -6,6 +6,7 @@ require_once( 'inc/supports.php' );
 require_once( 'inc/assets.php' );
 require_once( 'menus.php' );
 require_once( 'images.php' );
+require_once( 'inc/widgets/kb-carousel.php' );
 
 // fonction custom pour trouver les widgets uniquement avec leur filename
 function kb_icon( string $icon ): string {
